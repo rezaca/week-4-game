@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container" id="introduction">
+      <br>
+      <div class="text-center">
+        <h1>Badge Collector</h1>
+        <br>
+        <p>
+          A number will be randomly generated at the start of the game. Your goal is to match this number by clicking on the badges below. Each badge will have a randomly generated value at the start of the game. Clicking the badges will add to your score.
+        </p>
+        <p>
+           You <strong>WIN</strong> when total value of your badges match the number.
+           <br>
+           You <strong>LOSE</strong> when the total value of your badges go over the number
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="container" id="scoreboard">
+      <div class="jumbotron">
+
+          <div class="row">
+            
+            <div class="col-4">
+              <h5>Number to Match: <span id="randomNumber"></span></h5>
+            </div>
+
+            <div class="col-4">
+              <h5>Your Score: <span id="score"></span></h5>
+            </div>
+
+            <div class="col-4">
+              <h5>Win: <span id="win"></span></h5>
+              <h5>Loss: <span id="loss"></span></h5>
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+    <div class="container" id="badges">
+      <div class="row">
+        <div class="col-2 col-lg-4"></div>
+        <div class="col-2 col-lg-1">
+          <img class="img-fluid" src="assets/images/stone.png" alt="stone" id="stone">
+        </div>
+        <div class="col-2 col-lg-1">
+          <img class="img-fluid" src="assets/images/water.png" alt="stone" id="water">
+        </div>
+        <div class="col-2 col-lg-1">
+          <img class="img-fluid" src="assets/images/fire.png" alt="stone" id="fire">
+        </div>
+        <div class="col-2 col-lg-1">
+          <img class="img-fluid" src="assets/images/grass.png" alt="stone" id="grass">
+        </div>
+        <div class="col-2 col-lg-4"></div>
+      </div>     
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
